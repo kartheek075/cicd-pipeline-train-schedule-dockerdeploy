@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("kartheek075/train-schedule")
+                    app = docker.build("kartheek075/cicd-pipeline-train-schedule-dockerdeploy")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
